@@ -5,7 +5,9 @@
     --mainBlack: #333333;
     --lightGray: #EFEFEF;
     --mainRed: #E00E4D;
+    --transparentRed: rgba(224, 14, 77, .6);
     --mainOrange: #FF8000;
+    --lightOrange: #ffc994;
     --transOrange: rgba(255, 128, 0, .1);
     --border-radius: 4px;
     --card-radius: 6px;
@@ -261,4 +263,30 @@ input:checked + .slider:before {
 
 .card-subtitle {
     font-weight: 600;
+}
+
+/* video section  */
+.video-section {    
+    background: linear-gradient(rgba(224, 14, 77, .9), rgba(224, 14, 77, .9)), url('../img/paralax.png') center / cover fixed no-repeat;
+}
+
+.video-section-title {
+    color: var(--mainWhite);
+    font-weight: 900;
+}
+
+.video-section-info {
+    color: var(--mainWhite);
+    line-height: 2;
+}
+
+.link {
+    color: var(--lightOrange);
+    text-decoration: none !important;
+    font-weight: 600;
+    transition: var(--mainTransition);
+}
+
+.link:hover {
+    color: var(--mainWhite);
 }

@@ -9,9 +9,10 @@
     --mainOrange: #FF8000;
     --lightOrange: #ffc994;
     --transOrange: rgba(255, 128, 0, .1);
-    --border-radius: 4px;
+    --border-radius: 8px;
     --card-radius: 6px;
     --mainTransition: all .4s ease-in-out;
+    --boxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -44,6 +45,7 @@ body {
     text-transform: uppercase;
     padding: .7rem 2rem;
     border-radius: var(--border-radius);
+    font-size: 1rem;
     font-weight: 600;
     border: none;
     cursor: pointer;
@@ -53,6 +55,25 @@ body {
 .main-btn:hover {
     background: var(--mainOrange);
 
+}
+
+.cta-btn {
+    background: var(--mainRed);
+    color: var(--mainWhite);
+    border-radius: var(--border-radius);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    box-shadow: var(--boxShadow);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: var(--mainTransition);
+}
+
+.cta-btn:hover {
+    background: var(--mainOrange);
+       
 }
 
 .nav-btn {
@@ -127,9 +148,9 @@ body {
 .menu-dropdown {
     border: none;
     border-radius: var(--border-radius);
-    -webkit-box-shadow: 12px 10px 18px -15px rgba(0,0,0,0.75);
-    -moz-box-shadow: 12px 10px 18px -15px rgba(0,0,0,0.75);
-    box-shadow: 12px 10px 18px -15px rgba(0,0,0,0.75);
+    -webkit-box-shadow: var(--boxShadow);
+    -moz-box-shadow: var(--boxShadow);
+    box-shadow: var(--boxShadow);
 }
 
 .menu-dropdown > a {
@@ -227,7 +248,7 @@ input:checked + .slider:before {
 .card {
     border: none;
     border-radius: var(--card-radius);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: var(--boxShadow);
 }
 
 .card-title {
@@ -289,4 +310,18 @@ input:checked + .slider:before {
 
 .link:hover {
     color: var(--mainWhite);
+}
+
+/* cta section */
+.cta {
+    background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url('../img/gears.jpg') center / cover no-repeat;
+    min-height: 25rem;
+    position: relative;
+}
+
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

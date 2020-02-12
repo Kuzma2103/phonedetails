@@ -16,7 +16,37 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background: var(--mainWhite);
+    margin: 0;
+    padding: 0;
 }
+
+.hero-title {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.hero-info {
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* navigation */

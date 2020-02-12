@@ -3,6 +3,7 @@
 :root {
     --mainWhite: #fff;
     --mainBlack: #333333;
+    --transparentBlack: rgba(51, 51, 51, .4);
     --lightGray: #EFEFEF;
     --mainRed: #E00E4D;
     --transparentRed: rgba(224, 14, 77, .6);
@@ -13,6 +14,7 @@
     --card-radius: 6px;
     --mainTransition: all .4s ease-in-out;
     --boxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    --bottomShadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 
@@ -74,6 +76,19 @@ body {
 .cta-btn:hover {
     background: var(--mainOrange);
        
+}
+
+.footer-btn {
+    background: var(--mainOrange);
+    color: var(--mainWhite);
+    border-radius: var(--border-radius);
+    padding: .6rem 1.6rem;
+    font-size: .8rem;
+    text-transform: capitalize;
+    box-shadow: var(--boxShadow);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
 }
 
 .nav-btn {
@@ -324,4 +339,69 @@ input:checked + .slider:before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* footer */
+.footer {
+    background: var(--mainRed);
+    color: var(--mainWhite);
+}
+
+.footer-apple-btn {
+    border: none;
+    border-radius: var(--border-radius);
+    background: var(--mainWhite);
+    color: var(--mainRed);
+    padding: .5rem 2rem;
+    text-decoration: none !important;
+    transition: var(--mainTransition);
+}
+
+.footer-btn-text {
+    font-size: .5rem;
+}
+
+.footer-btn-text-lg {
+    font-size: .85rem;
+}
+
+.footer-apple-btn:hover {
+    color: var(--mainRed);
+}
+
+.newsleter {
+    border-left: 1px solid var(--mainWhite);
+    height: 25vh;
+    top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.top-footer {
+    -webkit-box-shadow: 0 8px 6px -6px var(--transparentBlack);
+	   -moz-box-shadow: 0 8px 6px -6px var(--transparentBlack);
+	        box-shadow: 0 8px 6px -6px var(--transparentBlack);
+}
+
+.bottom-footer-link {
+    color: var(--mainWhite);
+    text-decoration: none !important;
+    border-right: 2px solid var(--mainWhite);
+    padding-right: 1.2rem;
+    transition: var(--mainTransition);
+}
+
+.bottom-footer-link:hover {
+    color: var(--mainOrange);
+}
+
+.no-border {
+    border: none;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .btn-img {
+        margin-bottom: 1rem;
+    }
 }

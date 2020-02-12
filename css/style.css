@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,900&display=swap');
+
+:root {
+    --mainWhite: #fff;
+    --mainBlack: #333333;
+    --mainRed: #E00E4D;
+    --mainOrange: #FF8000;
+
+    --border-radius: 4px;
+    --card-radius: 6px
+    --transition: all .4s ease-in-out;
+}
+
+
+/* General setup */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--mainWhite);
+}
+
+
+/* navigation */
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-item {
+    text-decoration: none;
+    
+}
+
+.nav-link {
+    color: var(--mainBlack);
+    margin-right: 2rem;
+    padding: .7rem 0;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--mainOrange);
+}

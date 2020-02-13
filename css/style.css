@@ -217,6 +217,10 @@ body {
     background: var(--mainBlack);
 }
 
+.na-rate {
+    display: none;
+}
+
 /* on / off switch */
 .switch {
     position: relative;
@@ -424,6 +428,22 @@ input:checked + .slider:before {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 768px) {
 
     .btn-img {
@@ -438,9 +458,6 @@ input:checked + .slider:before {
         font-size: .95rem;
     }
 
-    .footer-img {
-        width: 100%;
-    }
 }
 
 @media screen and (min-width: 576px) {

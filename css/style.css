@@ -41,6 +41,7 @@ body {
     letter-spacing: .1rem;
 }
 
+/* buttons */
 .main-btn {
     background: var(--mainRed);
     color: var(--mainWhite);
@@ -57,6 +58,21 @@ body {
 .main-btn:hover {
     background: var(--mainOrange);
 
+}
+
+.moj-vip-btn {
+    background: var(--mainOrange);
+    color: var(--mainWhite) !important;
+    font-size: .9rem;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: .6rem 2rem !important;
+    cursor: pointer;
+    transition: var(--mainTransition);
+}
+
+.moj-vip-btn:hover {
+    background: var(--mainRed);
 }
 
 .cta-btn {
@@ -427,21 +443,19 @@ input:checked + .slider:before {
     border: none;
 }
 
+/* modal */
+.modal-link {
+    text-decoration: none !important;
+    font-size: 1rem;
+    color: var(--mainBlack);
+}
+.modal-link:hover {
+    color: var(--mainBlack);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.orange {
+    color: var(--mainOrange);
+}
 
 
 @media screen and (min-width: 768px) {

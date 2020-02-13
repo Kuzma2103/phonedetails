@@ -126,7 +126,7 @@ body {
     margin-right: 2rem;
     padding: .7rem 0;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     transition: var(--mainTransition);
 }
@@ -145,12 +145,13 @@ body {
     box-shadow: none;
     border: 1px solid var(--mainOrange);
     border-radius: var(--border-radius);
-    padding: .6rem 7.5rem;
+    padding: .6rem 4rem;
 }
 
 .dropdown-btn a {
     color: var(--mainBlack);
     font-weight: 600;
+    font-size: .8rem;
     text-decoration: none;
     transition: var(--mainTransition);
 }
@@ -159,6 +160,7 @@ body {
     background: var(--transOrange);
     border-radius: var(--border-radius);
 }
+
 
 .menu-dropdown {
     border: none;
@@ -302,8 +304,10 @@ input:checked + .slider:before {
 }
 
 /* video section  */
-.video-section {    
-    background: linear-gradient(rgba(224, 14, 77, .9), rgba(224, 14, 77, .9)), url('../img/paralax.png') center / cover fixed no-repeat;
+.video-section {
+    background: var(--mainOrange);
+    color: var(--mainWhite);
+    padding: 5rem;
 }
 
 .video-section-title {
@@ -317,7 +321,7 @@ input:checked + .slider:before {
 }
 
 .link {
-    color: var(--lightOrange);
+    color: var(--mainRed);
     text-decoration: none !important;
     font-weight: 600;
     transition: var(--mainTransition);
@@ -325,6 +329,13 @@ input:checked + .slider:before {
 
 .link:hover {
     color: var(--mainWhite);
+}
+
+
+.cta-section {
+    background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url('../img/gears.jpg') center / cover no-repeat;
+    min-height: 25rem;
+    position: relative;
 }
 
 /* cta section */
@@ -388,6 +399,10 @@ input:checked + .slider:before {
     border-right: 2px solid var(--mainWhite);
     padding-right: 1.2rem;
     transition: var(--mainTransition);
+}
+
+.bottom-footer p {
+    font-size: .65rem;
 }
 
 .bottom-footer-link:hover {
